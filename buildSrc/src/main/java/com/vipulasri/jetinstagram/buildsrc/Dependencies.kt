@@ -4,7 +4,7 @@ object Libs {
   const val androidGradlePlugin = "com.android.tools.build:gradle:7.1.0-alpha12"
   const val junit = "junit:junit:4.13"
 
-  const val exoplayer = "com.google.android.exoplayer:exoplayer:2.11.8"
+  const val exoplayer = "com.google.android.exoplayer:exoplayer:2.19.1"
 
   object Coil {
     private const val version = "1.3.2"
@@ -33,7 +33,7 @@ object Libs {
 
     object Compose {
       const val snapshot = ""
-      const val version = "1.0.2"
+      const val version = "1.2.0"
       const val activityComposeVersion = "1.3.0-alpha06"
 
       const val runtime = "androidx.compose.runtime:runtime:$version"

@@ -7,15 +7,15 @@ buildscript {
     maven { url "https://jitpack.io" }
   }
   dependencies {
-    classpath Libs.androidGradlePlugin
-    classpath Libs.Kotlin.gradlePlugin
+    classpath('com.android.tools.build:gradle:8.8.0') // stable AGP version
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0") // Update Kotlin Gradle Plugin if needed
   }
 }
 
 allprojects {
   repositories {
     google()
-    jcenter()
+    mavenCentral()
     maven { url "https://jitpack.io" }
   }
 }

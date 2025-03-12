@@ -1,5 +1,6 @@
 package com.vipulasri.jetinstagram.ui.home
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -15,15 +16,20 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.vectorResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
 import com.vipulasri.jetinstagram.R
 import com.vipulasri.jetinstagram.data.PostsRepository
 import com.vipulasri.jetinstagram.data.StoriesRepository
 import com.vipulasri.jetinstagram.model.Post
 import com.vipulasri.jetinstagram.model.Story
+import com.vipulasri.jetinstagram.model.User
 import com.vipulasri.jetinstagram.ui.components.icon
 import kotlinx.coroutines.launch
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @ExperimentalFoundationApi
 @Composable
 fun Home() {
@@ -126,4 +132,11 @@ private fun Post(
   onLikeToggle: (Post) -> Unit
 ) {
   PostView(post, onDoubleClick, onLikeToggle)
+}
+
+@OptIn(ExperimentalFoundationApi::class)
+@Preview(showBackground = true)
+@Composable
+fun HomePreview() {
+  Home()
 }

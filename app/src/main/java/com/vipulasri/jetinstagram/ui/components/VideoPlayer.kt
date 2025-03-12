@@ -9,6 +9,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
 import com.google.android.exoplayer2.C
+import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.source.ProgressiveMediaSource
@@ -32,7 +33,7 @@ fun VideoPlayer(uri: Uri) {
                 )
 
                 val source = ProgressiveMediaSource.Factory(dataSourceFactory)
-                    .createMediaSource(uri)
+                    .createMediaSource(MediaItem.fromUri(uri))
 
                 this.prepare(source)
             }
