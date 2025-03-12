@@ -20,7 +20,7 @@ import coil.compose.AsyncImage
 
 @Composable
 fun FavoritesScreen() {
-    var selectedTab by remember { mutableStateOf("You") }
+    var selectedTab by remember { mutableStateOf("You") }// to remember the state and recomposition
 
     Surface(color = MaterialTheme.colors.background) {
         Column(modifier = Modifier.fillMaxSize()) {
