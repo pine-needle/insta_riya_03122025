@@ -3,6 +3,7 @@ import com.vipulasri.jetinstagram.buildsrc.Libs
 plugins {
   id("com.android.application")
   id("kotlin-android")
+  id 'com.google.gms.google-services'
 }
 
 android {
@@ -72,8 +73,9 @@ dependencies {
 
   implementation Libs.Coil.sdk
   implementation Libs.exoplayer
-  implementation 'androidx.compose.foundation:foundation-android:1.7.8'
-//  implementation("com.google.android.exoplayer:exoplayer:2.19.1")
+  implementation ("androidx.compose.foundation:foundation-android:1.7.8")
+  implementation ("com.google.firebase:firebase-messaging:24.1.0")
+
 
   androidTestImplementation(Libs.junit)
   androidTestImplementation(Libs.AndroidX.Test.core)

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "443797270706",
+    "project_id": "jetinstagram-112f2",
+    "storage_bucket": "jetinstagram-112f2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443797270706:android:3f985a1070148cfed8d9ab",
+        "android_client_info": {
+          "package_name": "com.vipulasri.jetinstagram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBidjyg7TlB3nbcG2oy_PPA8Tn6WQL5SXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

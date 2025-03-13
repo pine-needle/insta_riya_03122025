@@ -8,7 +8,8 @@ buildscript {
   }
   dependencies {
     classpath('com.android.tools.build:gradle:8.8.0') // stable AGP version
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0") // Update Kotlin Gradle Plugin if needed
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0")
+      classpath 'com.google.gms:google-services:4.4.2'// Update Kotlin Gradle Plugin if needed
   }
 }
 
